@@ -1,0 +1,159 @@
+<!DOCTYPE htmk>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+		<title>Hugo's Portfolio::Home</title>
+		<meta name="description" content="This is the home page of Hugo Saard, a current student of web design tought by Susan Metoxen.">
+		<!--Bootstrap Stylesheet-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap')
+		</style>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap')
+		</style>
+	</head>
+	<body>
+
+		<header>
+			<img src="images/project-logo.jpg" alt="logo" height="150" width="250" class="img-fluid logo">
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="resume.html">Resume</a></li>
+				<li><a href="game.html">Game</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+			</ul>
+		</nav>
+
+		<div id="home-hero">
+			<h1>Welcome into my Website</h1>
+		</div>
+
+		<main>
+			<!--This is the main section-->
+			
+			<h2>Some Info of Me</h2>
+
+			<hr>
+			<br>
+
+			<div class="container-fluid">
+     			<div class="row">
+          			<div class="col-sm-6">
+          				<p>My name is Hugo Saard and I study Web Design and Web Programming at Saint Paul College in St. Paul, Minnesota.</p> 
+
+						<p>My planned graduation date is currently unknown, but it will be with Computer Graphics and Visualization degree program. I made this website as a portfolio of my skills developing websites.</p>
+
+						<p>I have taken the following classes at Saint Paul College:</p>
+						<ul>
+							<li>Web Fundamentals, where I learned HTML and CSS</li>
+							<li>Funamentals of Math</li>
+							<li>Intro to Engineering</li>
+							<li>Intro to Soci</li>
+							<li>Composition 1</li>
+							<li>Drawing 1</li>
+							<li>Photoshop 1</li>
+							<li>Intro Algebra/Intermed Algebra</li>
+							<li>Interpersonal Comm</li>
+							<li>Chemistry 1</li>
+							<li>Blogging Appilcations</li>
+							<li>Photoshop 2</li>
+						</ul>
+
+						<p>Next semester I will be taking Introduction to Computer Graphics, Digital Sound, and Adobe Animate.</p>
+
+						<p>Some of my hobbies are robots, drawing, video games, and collecting.
+						</p>
+					</div>
+					<div class="col-sm-6">
+						<img src="images/WIN_20240321_20_17_40_Pro.jpg" height="350" width="600" class="selfie">
+						<br>
+						<p class="self-desc">An Image of Me :]</p>
+					</div>
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="container-fluid">
+     			<div class="row">
+          			<div class="col-sm-12">
+          				<h3>Some neat Robot pictures I found on pixabay</h3>
+          			</div>
+          		</div>
+          	</div>
+
+			<div class="gallery">
+
+			    <div class="preview">
+			        <img id="preview" src="images/fingerbot.jpg" style="display:block;margin:0 auto;" alt=""  height="600" width="800"/>
+			    </div>
+
+			    <div class="gallery-thumbnails" style="margin:0 auto;text-align:center">
+			        <img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/retrobot.jpg" alt="" />
+			        <img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/cutebot.jpg" alt=""  />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/cylinderbot.jpg" alt="" />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/catbot.jpg" alt="" />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/computerbot.jpg" alt=""  />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img6').src;" id="img6" src="images/flowerbot.jpg" alt="" />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/fingerbot.jpg" alt="" />
+			        <img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/diagram.jpg" alt="" />
+			    </div>
+			    
+			</div>
+
+
+
+
+			<hr>
+			<br>
+
+		</main>
+
+		<footer>
+
+			<div class="footer-1000">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>Web Design Project</p>
+						</div>
+						<div class="col-sm-6">
+							<p>Connect with Me</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<small>This is a portfolio website created for the Web Fundamentals class at Saint Paul College by Hugo Saard.</small>
+							<br>
+							<small>The Logo image is a royalty free image from Pixabay by "Anaterate".</small>
+						</div>
+						<div class="col-sm-6">
+							<small><i class="fa fa-graduation-cap" aria-hidden="true"></i><br><small><a href="https://saintpaul.edu" target="_blank">Saint Paul College</a></small></small>
+							<br>
+							<small><i class="fa fa-envelope-square" aria-hidden="true"></i><br><small><a href="mailto:me@gmail.com" target="_blank">Email Me</a></small></small>
+							<br>
+							<small><i class="fa fa-twitter-square" aria-hidden="true"></i><br><small><a href="https://twitter.com/BigRoboLad" target="_blank">Twitter</a></small></small>
+							<br>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<small>&copy; Hugo Saard. All rights reserved.</small>
+		</footer>
+
+		<!--jQuery, Popper, and Bootstrap Javascript files-->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+	</body>
+</html>

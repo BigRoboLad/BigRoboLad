@@ -1,0 +1,225 @@
+
+
+header{
+	background: rgb(0,60,47);
+	background: radial-gradient(circle, rgba(0,60,47,1) 0%, rgba(0,101,43,1) 100%);
+}
+.logo{
+	margin: 0 auto;
+	display: block;
+	border-radius: 30%;
+}
+body{
+	border-top: 10px solid darkgreen;
+	font-family: 'Orbitron', sans-serif;
+	color: greenyellow;
+	margin: 0;
+	background: rgb(2,11,6);
+	background: radial-gradient(circle, rgba(2,11,6,1) 0%, rgba(8,54,32,1) 100%);
+	border-bottom: 10px solid darkgreen;
+}
+h1, h2{
+	font-family: 'Sarpanch', sans-serif;
+	color: lightgreen;
+	text-shadow: 2px 2px 3px black;
+}
+h1{
+	text-align: center;
+	font-size: 4em;
+}
+h3{
+	text-align: center;
+}
+#home-hero{
+	background-image: url(images/matrix-356024_1280.jpg);
+	height: 225px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#home-hero h1{
+	text-align: center;
+	font-size: 60px;
+	padding: 65px 0;
+	margin: 0;
+	text-shadow: 4px 4px 5px black;
+}
+.myButton{
+	padding: 5px;
+	color: lightgreen;
+	background-color: darkgreen;
+	text-shadow: 4px 4px 5px black;
+	margin-left: 300px;
+}
+main{
+	max-width: 1000px;
+	margin: 20px auto;
+}
+.resumain{
+	padding: 35px;
+	margin: 0 auto;
+	border: 2px solid green;
+	background-color: darkgreen;
+	box-shadow: 6px 6px 7px black;
+}
+.selfie{
+	border-radius: 40%;
+	border: 3px solid lightgreen;
+}
+.self-desc{
+	text-align: center;
+}
+.gallery .preview{
+    width: 100%;
+    height: auto;
+}
+img{
+	border: 3px solid green;
+    display: inline-block;
+}
+
+.gallery .gallery-thumbnails img {
+    width: 100px;
+    height: 75px;
+    margin: 3px 10px 10px 0;
+    border: 3px solid green;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+.float-right{
+	float: right;
+	margin-left: 30px;
+	max-width: 80%;
+	height: auto;
+}
+.id2{
+	text-align: center;
+}
+footer{
+	text-align: center;
+	border-top: 1px solid gray;
+	padding: 10px;
+	background-image: url(images/matrix-356024_1280.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.footer-1000{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+small{
+	color: white;
+	text-shadow: 5px 5px 6px black;
+}
+
+/* CSS Links code */
+
+a:link{
+	color: white;
+	text-shadow: 5px 5px 6px black;
+}
+a:visited{
+	color: lightgreen;
+	text-shadow: 5px 5px 6px black;
+}
+a:hover{
+	color: lightseagreen;
+	text-shadow: 5px 5px 6px black;
+}
+a:active{
+	color: black;
+	text-shadow: 5px 5px 6px black;
+}
+
+
+/* Vertical Navigation bar */
+
+nav{
+	background: rgb(0,60,47);
+	background: radial-gradient(circle, rgba(0,60,47,1) 0%, rgba(0,101,43,1) 100%);
+	border-top: 2px darkgreen solid;
+	border-bottom: 2px darkgreen solid;
+	padding: 5px;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	display: inline;
+}
+nav a{
+	text-decoration: none;
+	padding-right: 10px;
+}
+nav a:link{
+	color: lightgreen;
+}
+nav a:visited{
+	color: green;
+}
+nav a:hover{
+	color: white;
+}
+nav a:active{
+	color: black;
+}
+
+
+/* JavaScript Game changes for mobile */
+.mobile{
+	display:none;
+}
+@media only screen and (max-width: 768px){
+	.desktop{
+		display:none;
+	}
+	.mobile{
+		display: block;
+		touch-action: manipulation;
+	}
+}
+
+
+
+/* CSS for Tablet */
+
+@media only screen and (max-width: 1024px){
+	h1{
+		font-size: 2em;
+	}
+}
+
+/* CSS for Smartphones */
+
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 2em;
+		letter-spacing: .25em;
+	}
+	nav ul{
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		padding-right: 2em;
+	}
+	nav li{
+		width: 12em;
+		border-bottom: none;
+	}
+	#mobile{
+		display: none;
+	}
+	#not-mobile{
+		display: inline;
+	}
+}

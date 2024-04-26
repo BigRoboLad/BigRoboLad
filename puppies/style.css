@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat,family=Oswald,wght@0,300;1,300;1,600&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	margin: 0;
+	background: rgb(2,11,6);
+	background: radial-gradient(circle, rgba(2,11,6,1) 0%, rgba(0,189,255,1) 100%);
+}
+h1, h2{
+	font-family: 'Workbench', sans-serif;
+	color: black;
+}
+h3{
+	font-weight: bold;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 40px;
+}
+h1{
+	text-align: center;
+	font-size: 4em;
+}
+main{
+	max-width: 1200px;
+	margin: 20px auto;
+}
+.home-hero{
+	background-image: url(images/header.jpg);
+	height: 475px;
+	background-size: cover;
+	background-position: center;
+	color: #042837;
+	padding: 10px 10px 10px 30px;
+	border-radius: 10%;
+	border: 5px solid navy;
+}
+blockquote{
+	background-color: lightblue;
+	border-left: 10px solid navy;
+	padding: 30px;
+}
+img{
+	display: block;
+	margin: 0 auto;
+}
+.img-fluid{
+	border-radius: 50%;
+	border: 5px solid navy;
+}
+p{
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 30px;
+}
+#git{
+	font-family: 'Rowdies', sans-serif;
+}
+#linked{
+	font-family: 'Rowdies', sans-serif;
+}
+#twit{
+	font-family: 'Rowdies', sans-serif;
+}
+#email{
+	font-family: 'Rowdies', sans-serif;
+}
+footer{
+	text-align: center;
+	border-top: 1px solid gray;
+	padding: 10px;
+	background: rgb(116,142,255);
+	background: radial-gradient(circle, rgba(116,142,255,1) 0%, rgba(0,189,255,1) 100%);
+}
+.fa-github-alt{
+	font-size: 60px;
+}
+.fa-linkedin-square{
+	font-size: 60px;
+}
+.fa-twitter-square{
+	font-size: 60px;
+}
+.fa-envelope{
+	font-size: 60px;
+}
+
+/* CSS Links code */
+
+a:link{
+	color: red;
+}
+a:visited{
+	color: darkred;
+}
+a:hover{
+	color: blue;
+}
+a:active{
+	color: black;
+}
+
+
+/* Vertical Navigation bar */
+
+nav{
+	padding: 5px;
+	border-top: 2px darkblue solid;
+	border-bottom: 2px darkblue solid;
+	background: rgb(188,116,255);
+	background: radial-gradient(circle, rgba(188,116,255,1) 0%, rgba(92,90,255,1) 100%);
+	font-family: 'Rowdies', sans-serif;
+	font-size: 25px;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	display: inline;
+}
+nav a{
+	text-decoration: none;
+	padding-right: 10px;
+}
+nav a:link{
+	color: white;
+}
+nav a:visited{
+	color: lightblue;
+}
+nav a:hover{
+	color: crimson;
+}
+nav a:active{
+	color: black;
+}
+
+
+/* CSS for Tablet */
+
+@media only screen and (max-width: 1024px){
+	h1{
+		font-size: 2em;
+	}
+}
+
+/* CSS for Smartphones */
+
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 1.5em;
+	}
+}

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat,family=Oswald,wght@0,300;1,300;1,600&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	margin: 0;
+	background: rgb(0,208,210);
+	background: linear-gradient(0deg, rgba(0,208,210,1) 0%, rgba(85,0,175,1) 100%);
+}
+h1, h2{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-align: center;
+	background-color: navy;
+	clear: both;
+}
+h2{
+	background: rgb(63,94,251);
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	clear: both;
+}
+h1{
+	text-align: center;
+	font-size: 4em;
+}
+p{
+	color: white;
+}
+main{
+	max-width: 1000px;
+	margin: 20px auto;
+}
+footer{
+	text-align: center;
+	border-top: 1px solid gray;
+	padding: 10px;
+	background: rgb(0,115,129);
+	background: linear-gradient(90deg, rgba(0,115,129,1) 0%, rgba(72,0,98,1) 49%, rgba(0,38,98,0.908000700280112) 100%);
+}
+.logo{
+	max-width: 275px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding: 20px;
+}
+#home-hero{
+	background-image: url(images/guitars.jpg);
+	height: 450px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#home-hero h1{
+	text-align: center;
+	color: #FF00FE;
+	text-shadow: 2px 2px 2px black;
+	margin: 0;
+	padding: 10px;
+	background-color: rgba(0,0,0,.5);
+}
+.float-right{
+	float: right;
+	margin-left: 30px;
+	max-width: 70%;
+	height: auto;
+}
+table{
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 5px solid #000000;
+}
+tr:nth-child(even){
+  background-color: lightgray;
+}
+th{
+  background: rgb(0,115,129);
+	background: linear-gradient(90deg, rgba(0,115,129,1) 0%, rgba(91,0,124,1) 10%, rgba(0,7,75,1) 100%);
+  color: white;
+  padding: 10px;
+  border-bottom: 5px solid #000000;
+}
+td{
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+#form{
+	margin: 0 auto;
+	width: 250px;
+	border: 2px solid #000000;
+	background: rgb(118,141,255);
+	background: radial-gradient(circle, rgba(118,141,255,1) 0%, rgba(255,158,246,1) 100%);
+	padding: 3px;
+}
+label{
+	float: left;
+	width: 8em;
+	padding-right: 1em;
+}
+input, textarea{
+	margin-bottom: 1em;
+	display: block;
+}
+input[type=submit]{
+	display: block;
+	background-color: darkviolet;
+	color: white;
+	font-size: 35px;
+	border: 1px solid #000000;
+	border-radius: 25px;
+}
+
+.video-container{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.video-container::after{
+  padding-top: 56.25%;
+  display: block;
+  content: '';
+}
+.video-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS Links code */
+
+a:link{
+	color: red;
+}
+a:visited{
+	color: darkred;
+}
+a:hover{
+	color: blue;
+}
+a:active{
+	color: black;
+}
+
+
+/* Vertical Navigation bar */
+
+nav{
+	background: rgb(45,226,247);
+	background: linear-gradient(90deg, rgba(45,226,247,1) 0%, rgba(177,53,222,1) 49%, rgba(0,77,201,0.908000700280112) 100%);
+	border-top: 2px darkblue solid;
+	border-bottom: 2px darkblue solid;
+	padding: 5px;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	display: inline;
+}
+nav a{
+	text-decoration: none;
+	padding-right: 10px;
+}
+nav a:link{
+	color: white;
+}
+nav a:visited{
+	color: pink;
+}
+nav a:hover{
+	color: crimson;
+}
+nav a:active{
+	color: lightgray;
+}
+
+
+/* CSS for Tablet */
+
+@media only screen and (max-width: 1024px){
+	h1{
+		font-size: 2em;
+	}
+}
+
+/* CSS for Smartphones */
+
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 1.5em;
+	}
+}
