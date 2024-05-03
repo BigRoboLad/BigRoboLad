@@ -20,7 +20,8 @@
 	         border: 1px solid #d3d3d3;
 	         background-color: #f1f1f1;
 	         background-image: url(images/spiral-757817_640.jpg);
-	         margin-left: 300px;
+	         margin: 0 auto;
+	         display: block;
 	        }
 	    </style>
 	</head>
@@ -44,12 +45,18 @@
 
 
 		<div id="game" ></div>
-	    <div class="game-controls">
-	       <button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-	       <a href="game.html"><button class="myButton">PLAY AGAIN</button></a>
-	    </div>
+	    <div class="game-controls desktop">
+				<button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP WINGS</button>
+					<a href="" ><button class="myButton">PLAY AGAIN</button></a>
+			</div>
+					
+			<div class="game-controls mobile">
+				<button class="myButton" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.05)">FLAP WINGS</button>
+					<a href="" ><button class="myButton">PLAY AGAIN</button></a>
+			</div>
 
 		<main>
+			<!--This is the game page, where I "created" a game-->
 
 			<h2>I made this game with the help of code that was provided while completing the W3 Schools JavaScript tutorial. I then proceeded to "enhance" it but adding adjustments to it.</h2>
 			
@@ -79,8 +86,8 @@
 		      var myGameArea = {
 		          canvas : document.createElement("canvas"),
 		          start : function() {
-		              this.canvas.width = 640;
-		              this.canvas.height = 360;
+		              this.canvas.width = canvasWidth;
+		              this.canvas.height = canvasHeight;
 		              this.context = this.canvas.getContext("2d");
 		              var myGame = document.getElementById("game");
 		              myGame.insertBefore(this.canvas, myGame.childNodes[0]);        
@@ -217,15 +224,7 @@
 				</div>
 			</div>
 
-			<div class="game-controls desktop">
-				<button class="myButton" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP WINGS</button>
-					<a href="" ><button class="myButton">PLAY AGAIN</button></a>
-			</div>
-					
-			<div class="game-controls mobile">
-				<button class="myButton" ontouchstart="accelerate(-0.2)" ontouchend="accelerate(0.05)">FLAP WINGS</button>
-					<a href="" ><button class="myButton">PLAY AGAIN</button></a>
-			</div>
+			
 
 			
 			<small>&copy; Hugo Saard. All rights reserved.</small>
